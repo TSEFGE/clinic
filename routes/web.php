@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::resource('pacientes', 'PacienteController');
+
+Route::resource('pacienteMedidas', 'PacienteMedidasController');
