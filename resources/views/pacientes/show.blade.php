@@ -146,51 +146,7 @@
             </div>
 
             <div class="col-sm-10">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#home">Citas Historial</a></li>
-                    <li><a data-toggle="tab"class="" href="#menu1">Heredofamiliares</a></li>
-                    <li><a data-toggle="tab" href="#menu2">No Patológicos</a></li>
-                </ul>
-                <div class="panel panel-default">
-                <div class="panel-body">
-                <div class="tab-content">
-                    <div id="home" class="tab-pane fade in active">
-                        <br>
-                        <div class="table-responsive">
-                            <table id="citas" class="table table-bordered" width="99%">
-                                <thead>
-                                    <tr>
-                                        <td>Fecha</td>
-                                        <td>Hora</td>
-                                        <td>Nota</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>05/07/2017</td>
-                                        <td>01:22:24 p.m.</td>
-                                        <td>Operación urgente.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>05/08/2017</td>
-                                        <td>01:22:24 p.m.</td>
-                                        <td>Se retiraron los puntos.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div id="menu1" class="tab-pane fade">
-                        <h3>Menu 1</h3>
-                        <p>Some content in menu 1.</p>
-                    </div>
-                    <div id="menu2" class="tab-pane fade">
-                        <h3>Menu 2</h3>
-                        <p>Some content in menu 2.</p>
-                    </div>
-                </div>
-                </div>
-                </div>
+                @include("pacientes.detalle")
             </div>
             
         </div>
@@ -201,7 +157,7 @@
 @section('js')
 <script type="text/javascript">
     $(document).ready(function(){
-        $('#citas').DataTable({
+        $('#citashist').DataTable({
             "pagingType": "full_numbers",
             "language": {
                 "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"

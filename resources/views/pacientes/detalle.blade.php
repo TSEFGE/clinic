@@ -28,10 +28,34 @@
     </li>
 </ul>
 
+<div class="panel panel-default">
+<div class="panel-body">
 <div class="tab-content">
     <div class="tab-pane active" id="citas" role="tabpanel">
-        <!--incluir tabla de citas-->
-
+        <br>
+        <div class="table-responsive">
+            <table id="citashist" class="table table-bordered" width="99%">
+                <thead>
+                    <tr>
+                        <td>Fecha</td>
+                        <td>Hora</td>
+                        <td>Nota</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>05/07/2017</td>
+                        <td>01:22:24 p.m.</td>
+                        <td>Operación urgente.</td>
+                    </tr>
+                    <tr>
+                        <td>05/08/2017</td>
+                        <td>01:22:24 p.m.</td>
+                        <td>Se retiraron los puntos.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <div class="tab-pane" id="heredofam" role="tabpanel">
         <div class="form-group col-sm-2">
@@ -319,4 +343,6 @@
     <div class="tab-pane" id="pesomedidas" role="tabpanel">
         
     </div>
+</div>
+</div>
 </div>
