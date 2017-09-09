@@ -70,6 +70,8 @@
     {!! Form::email('email', null, ['class' => 'form-control']) !!}
 </div>
 
+@include("pacientes.detalle")
+
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
