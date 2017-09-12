@@ -21,7 +21,7 @@
         <a class="nav-link "  data-toggle="tab" href="#infante" role="tab">Infante</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link "  data-toggle="tab" href="#complentos" role="tab">Complementarios</a>
+        <a class="nav-link "  data-toggle="tab" href="#complementos" role="tab">Complementarios</a>
     </li>
     <li class="nav-item">
         <a class="nav-link "  data-toggle="tab" href="#pesomedidas" role="tab">Peso y Medidas</a>
@@ -331,14 +331,164 @@
             {!! Form::text('tiempouso', null, ['class' => 'form-control']) !!}
         </div>
     </div>
-    <div class="tab-pane" id="hombre" role="tabpanel">
 
+    <div class="tab-pane" id="hombre" role="tabpanel">
+        <div class="form-group col-sm-12">
+            {!! Form::label('ivsa', 'IVSA:') !!}
+            {!! Form::text('ivsa', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-12">
+            {!! Form::label('chequeoProstata', 'Chequeo de Próstata:') !!}
+            {!! Form::text('chequeoProstata', null, ['class' => 'form-control']) !!}
+        </div>
+        
+        <div class="form-group col-sm-12">
+            {!! Form::label('ultraProstatico', 'Ultrasonido Prostático:') !!}
+            {!! Form::text('ultraProstatico', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-12">
+            {!! Form::label('antigenoProstatico', 'Antígeno Prostático:') !!}
+            {!! Form::text('antigenoProstatico', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-12">
+            {!! Form::label('tactoRectal', 'Tacto Rectal:') !!}
+            {!! Form::text('tactoRectal', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-12">
+            {!! Form::label('enfermVenereas', 'Enfermedades Venéreas:') !!}
+            {!! Form::text('enfermVenereas', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-12">
+            {!! Form::label('infeccUrinarias', 'Infección en Vías Urinarias:') !!}
+            {!! Form::text('infeccUrinarias', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-12">
+            {!! Form::label('problemEsteril', 'Problemas de Esterilidad:') !!}
+            {!! Form::text('problemEsteril', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-12">
+            {!! Form::label('problemHormo', 'Problemas Hormonales:') !!}
+            {!! Form::text('problemHormo', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-12">
+            {!! Form::label('disfuncionErectil', 'Disfunción Eréctil:') !!}
+            {!! Form::text('disfuncionErectil', null, ['class' => 'form-control']) !!}
+        </div>
     </div>
+
     <div class="tab-pane" id="infante" role="tabpanel">
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('peso', 'Peso al nacer:') !!}
+            {!! Form::text('peso', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('talla', 'Talla al nacer:') !!}
+            {!! Form::text('talla', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('lloro', 'Lloró y respiró al nacer:') !!}
+            {!! Form::text('lloro', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('apgar', 'Apgar:') !!}
+            {!! Form::text('apgar', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('silverman', 'Silverman:') !!}
+            {!! Form::text('silverman', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('lactancia', 'Lactancia Materna:') !!}
+            {!! Form::text('lactancia', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('ablactacion', 'Ablactación:') !!}
+            {!! Form::text('ablactacion', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('sosten', 'Sosten Cefálico:') !!}
+            {!! Form::text('sosten', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('gateo', 'Gateó:') !!}
+            {!! Form::text('gateo', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('camino', 'Caminó:') !!}
+            {!! Form::text('camino', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('primeraDenticion', 'Primera Dentición:') !!}
+            {!! Form::text('primeraDenticion', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('denticionDefinitiva', 'Dentición Definitiva:') !!}
+            {!! Form::text('denticionDefinitiva', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('caries', 'Caries:') !!}
+            {!! Form::text('caries', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('lengua', 'Lengua:') !!}
+            {!! Form::text('lengua', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('orofaringe', 'Orofaringe:') !!}
+            {!! Form::text('orofaringe', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('deformidades', 'Deformidades o Anormalidades Fisiológicas:') !!}
+            {!! Form::text('deformidades', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group col-sm-6">
+            {!! Form::label('medicacion', 'Medicación Pre y Durante el Embarazo:') !!}
+            {!! Form::text('medicacion', null, ['class' => 'form-control']) !!}
+        </div>
 
     </div>
     <div class="tab-pane" id="complementos" role="tabpanel">
-
+        <div class="form-group col-sm-12">
+            {!! Form::label('desparasitacion', 'Ultima Desparasitación:') !!}
+            {!! Form::text('desparasitacion', null, ['class' => 'form-control']) !!}
+        </div>
+        <div class="form-group col-sm-12">
+            {!! Form::label('enfermCronicas', 'Enfermedades Crónicas Degenerativas que Padezca y Tratamiento:') !!}
+            {!! Form::text('enfermCronicas', null, ['class' => 'form-control']) !!}
+        </div>
+        <div class="form-group col-sm-12">
+            {!! Form::label('padecimiento', 'Padecimiento Actual:') !!}
+            {!! Form::text('padecimiento', null, ['class' => 'form-control']) !!}
+        </div>
+        <div class="form-group col-sm-12">
+            {!! Form::label('txUtilizados', 'Tx Utilizados:') !!}
+            {!! Form::text('txUtilizados', null, ['class' => 'form-control']) !!}
+        </div>
     </div>
     <div class="tab-pane" id="pesomedidas" role="tabpanel">
         

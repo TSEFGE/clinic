@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
     <section class="content-header">
         <h1>
             Paciente
@@ -21,4 +22,5 @@
             </div>
         </div>
     </div>
+</div>
 @endsection
