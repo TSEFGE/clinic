@@ -15,7 +15,7 @@ class CreateConsultorioTable extends Migration
     {
         Schema::create('consultorio', function (Blueprint $table) {
             $table->increments('idConsultorio');
-            $table->integer('idUsuario');
+            $table->integer('idUsuario')->unsigned();
             $table->integer('numero');
             $table->timestamps();
             $table->softDeletes();

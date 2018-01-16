@@ -15,9 +15,9 @@ class CreateCitaTable extends Migration
     {
         Schema::create('cita', function (Blueprint $table) {
             $table->increments('idCita');
-            $table->integer('idConsultorio');
-            $table->integer('idPaciente');
-            $table->integer('idUsuario');
+            $table->integer('idConsultorio')->unsigned();
+            $table->integer('idPaciente')->unsigned();
+            $table->integer('idUsuario')->unsigned();
             $table->date('fecha');
             $table->time('horaIni');
             $table->time('horaFin');
@@ -28,7 +28,7 @@ class CreateCitaTable extends Migration
 
 
             $table->foreign('idConsultorio')->references('idConsultorio')->on('consultorio')->onDelete('cascade');
-            $table->foreign('idPaciente')->references('idPaciente')->on('pacientes')->onDelete('cascade');
+            $table->foreign('idPaciente')->references('idPaciente')->on('paciente')->onDelete('cascade');
             $table->foreign('idUsuario')->references('idUsuario')->on('users')->onDelete('cascade');
         });
     }
