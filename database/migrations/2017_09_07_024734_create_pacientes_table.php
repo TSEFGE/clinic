@@ -15,6 +15,7 @@ class CreatePacientesTable extends Migration
     {
         Schema::create('paciente', function (Blueprint $table) {
             $table->increments('idPaciente');
+            $table->string('rfc', 13);
             $table->string('nombre', 100);
             $table->string('paterno', 100);
             $table->string('materno', 100);
@@ -25,9 +26,7 @@ class CreatePacientesTable extends Migration
             $table->string('telRad', 20);
             $table->boolean('conExped');
             $table->string('email', 150);
-
-            /*$table->string('rfc', 13);
-            $table->string('direccion', 128);
+            /*$table->string('direccion', 128);
             $table->integer('idOcupacion');
             $table->integer('idReligion');
             $table->string('sexo', 32);*/
