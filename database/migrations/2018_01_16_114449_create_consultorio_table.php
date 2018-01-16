@@ -14,10 +14,10 @@ class CreateConsultorioTable extends Migration
     public function up()
     {
         Schema::create('consultorio', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('idConsultorio');
             $table->integer('numero');
             $table->string('medico', 200);
-            $table->string('especialidad', 100);
+            $table->integer('idEspecialidad');
             $table->timestamps();
         });
     }
