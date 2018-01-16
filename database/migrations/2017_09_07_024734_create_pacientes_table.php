@@ -13,20 +13,24 @@ class CreatePacientesTable extends Migration
      */
     public function up()
     {
-        Schema::create('pacientes', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nombre', 64);
-            $table->string('paterno', 64);
-            $table->string('materno', 64);
-            $table->string('sexo', 32);
-            $table->date('fechaNacimiento');
-            $table->string('rfc', 13);
+        Schema::create('paciente', function (Blueprint $table) {
+            $table->increments('idPaciente');
+            $table->string('nombre', 100);
+            $table->string('paterno', 100);
+            $table->string('materno', 100);
+            $table->date('fechaNac');
+            $table->string('telCasa', 20);
+            $table->string('telCel', 20);
+            $table->string('telTrab', 20);
+            $table->string('telRad', 20);
+            $table->boolean('conExped');
+            $table->string('email', 150);
+
+            /*$table->string('rfc', 13);
             $table->string('direccion', 128);
-            $table->string('telefono', 10);
-            $table->string('celular', 10);
             $table->integer('idOcupacion');
             $table->integer('idReligion');
-            $table->string('email', 256);
+            $table->string('sexo', 32);*/
             $table->timestamps();
             $table->softDeletes();
         });
