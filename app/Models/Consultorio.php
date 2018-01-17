@@ -17,7 +17,6 @@ class Consultorio extends Model
     public $fillable = [
         "idConsultorio",
 		"idUsuario",
-		"idEspecialidad",
 		"numero"
     ];
 

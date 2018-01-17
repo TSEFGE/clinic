@@ -16,13 +16,12 @@ class CreateConsultorioTable extends Migration
         Schema::create('consultorio', function (Blueprint $table) {
             $table->increments('idConsultorio');
             $table->integer('idUsuario');
-            $table->integer('idEspecialidad');
             $table->integer('numero');
             $table->timestamps();
             $table->softDeletes();
 
             $table->foreign('idUsuario')->references('idUsuario')->on('users')->onDelete('cascade');
-            $table->foreign('idEspecialidad')->references('idEspecialidad')->on('cat_especialidad')->onDelete('cascade');
+            
         });
     }
 
