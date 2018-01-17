@@ -27,25 +27,25 @@ class Paciente extends Model
 {
     use SoftDeletes;
 
-    public $table = 'pacientes';
+    public $table = 'paciente';
     
 
     protected $dates = ['deleted_at'];
 
 
     public $fillable = [
+        'idPaciente',
+        'rfc',
         'nombre',
         'paterno',
         'materno',
         'sexo',
-        'fechaNacimiento',
-        'rfc',
-        'direccion',
-        'telefono',
-        'celular',
-        'idOcupacion',
-        'idReligion',
-        'email'
+        'fechaNac',
+        'telCasa',
+        'telCel',
+        'telRadio',
+        'conExped',
+        'correo'
     ];
 
     /**
@@ -53,7 +53,7 @@ class Paciente extends Model
      *
      * @var array
      */
-    protected $casts = [
+    /*protected $casts = [
         'nombre' => 'string',
         'paterno' => 'string',
         'materno' => 'string',
@@ -66,20 +66,20 @@ class Paciente extends Model
         'idOcupacion' => 'integer',
         'idReligion' => 'integer',
         'email' => 'string'
-    ];
+    ];*/
 
     /**
      * Validation rules
      *
      * @var array
      */
-    public static $rules = [
+    /*public static $rules = [
         'nombre' => 'required',
         'paterno' => 'required',
         'sexo' => 'required',
         'idOcupacion' => 'required',
         'idReligion' => 'required'
-    ];
+    ];*/
 
     
 }

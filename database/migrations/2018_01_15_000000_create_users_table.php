@@ -23,6 +23,8 @@ class CreateUsersTable extends Migration
             $table->integer('nivel');
             $table->rememberToken();
             $table->timestamps();
+
+            $table->foreign('idEspecialidad')->references('idEspecialidad')->on('cat_especialidad')->onDelete('cascade');
         });
     }
 
