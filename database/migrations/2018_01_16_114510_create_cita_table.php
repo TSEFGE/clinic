@@ -14,7 +14,7 @@ class CreateCitaTable extends Migration
     public function up()
     {
         Schema::create('cita', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('idCita');
             $table->integer('idConsultorio');
             $table->integer('idPaciente');
             $table->integer('idUsuario');
@@ -24,6 +24,12 @@ class CreateCitaTable extends Migration
             $table->integer('status');
             $table->string('nota', 255);
             $table->timestamps();
+            $table->softDeletes();
+
+
+            $table->foreign('idConsultorio')->references('idConsultorio')->on('consultorio')->onDelete('cascade');
+            $table->foreign('idPaciente')->references('idPaciente')->on('pacientes')->onDelete('cascade');
+            $table->foreign('idUsuario')->references('idUsuario')->on('users')->onDelete('cascade');
         });
     }
 
